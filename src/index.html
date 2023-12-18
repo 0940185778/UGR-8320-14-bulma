@@ -3,46 +3,68 @@
   <head>
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <title>portfolio home</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <img src="img/download.webp" alt="portfolio logo" class="logo" >
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about_me.html">ABOUT ME</a></li>
-          <li><a href="travel.html">TRAVEL</a></li>
-          <li><a href="voluntary_activity.html">VOLUNTARY ACIVITY</a></li>
-          <li><a href="contact_info.html">CONTACT INFO</a></li>
-        </ul>
-      </nav>
-    </header>
-    <div class="details">
-      <h1>I'm Biniyam <span>Assefa</span></h1>
-      <h2>Software Enigineer Student</h2>
-      <p>
-        This ismy official profile and portfolio webiste to show all Details on my life and experiance in school and out side school.
+    <section class="has-background-info-light">
+      <header>
+        <nav class="navbar has-background-primary">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+          <img src="img/download.webp" alt="portfolio logo"   class=" image is-64x64 is-rounded" >
+          </a>
+          <a  class="navbar-burger" id="burger">
+            <span class="has-background-black"></span>
+            <span class="has-background-black"></span>
+            <span class="has-background-black"></span>
+          </a> 
+          </div>
+          <div class="navbar-menu" id="nav-links">
+          <div class="navbar-end">
+          
+            <a class="navbar-item has-text-black" href="index.html">HOME</a>
+            <a class="navbar-item has-text-black" href="about_me.html">ABOUT ME</a>
+            <a class="navbar-item has-text-black" href="travel.html">TRAVEL</a>
+            <a class="navbar-item has-text-black" href="voluntary_activity.html">VOLUNTARY ACIVITY</a>
+            <a class="navbar-item has-text-black" href="contact_info.html">CONTACT INFO</a>
+          
+          </div>
+          </div>
+        </nav>
+      </header>
+    <section class="section">
+    <div class="container">
+    <div class="columns vcentered" >
+      <div class="has-text-left column">
+      <h1 class="is-size-1  is-uppercase title ">I'm Biniyam <span class="is-color-gold">Assefa</span></h1>
+      <h2 class="is-size-3 subtitle">Software Enigineer Student</h2>
+      <p class="is-size-4 is-text-warning">
+        This is my official profile and portfolio webiste to show all 
+        <br>Details on my life and experiance in school and out side school.
       </p>
-      <div class="image">
-        <img src="img/photo_2023-11-23_19-43-31.jpg" alt="home photo" >
+    </div>
+      <div class="column">
+        <img src="img/home_page.png" alt="home photo" >
       </div>
     </div>
-    <div>
-      <video src="resource/video_intoro.mp4" controls></video>
+    </div>
+  </section>
+    <div class="column">
+      <video src="resource/video_intoro.mp4" controls ></video>
       <p>
         If Your browser doesn't support this video. Here is a
         <a href="resource/LalibelaEthiopia(ላሊበላ).mp4">link to the video</a>
         instead.
       </p>
     </div>
-    <section id="footer">
-      <div class="footer container">
-        <div class="brand">
-          <h3><span>B</span>iniyam <span>A</span>ssefa</h3>
-        </div>
-        <div class="social-icon">
-          <div class="social-item">
+    <footer class="footer has-background-dark " >
+      <div class="brand">
+        <h3 class="has-text-centered has-text-white"><span>B</span>iniyam <span>A</span>ssefa</h3>
+      </div>
+      <div class="container">
+        <div class="columns is-mobile">
+          <div class="column is-flex is-align-items-stretch">
             <a href="Biniyam_Assefa"
               ><img
                 src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"
@@ -51,7 +73,7 @@
               facebook</a
             >
           </div>
-          <div class="social-item">
+          <div class="column is-flex is-align-items-stretch">
             <a href="binyamasseafa648"
               ><img
                 src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"
@@ -59,7 +81,7 @@
               >instagram</a
             >
           </div>
-          <div class="social-item">
+          <div class="column is-flex is-align-items-stretch">
             <a href="https://t.me/Binimerci777"
               ><img
                 src="https://img.icons8.com/?size=80&id=112159&format=png"
@@ -68,8 +90,12 @@
             >
           </div>
         </div>
-        <p>Copyright © 2023 Biniyam. All rights reserved</p>
       </div>
-    </section>
+      <div>
+        <p class="has-text-centered has-text-white">Copyright © 2023 Biniyam. All rights reserved</p>
+      </div>
+    </footer>
+  </section>
+  <script src="index.js"></script>
   </body>
 </html>
